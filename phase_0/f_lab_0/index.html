@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form | Mireau-Jules</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Community Feedback Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform.</p>
+    </header>
+    
+    <main>
+      <form id="survey-form">
+
+        <div class="form-group">
+          <label id="name-label" for="name">Name: </label>
+          <input id="name" name="name" type="text" placeholder="e.g. John Doe" required/>
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email: </label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" required/>
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age: </label>
+          <input id="number" name="number" type="number" placeholder="21" max="130" min="0" required/>
+        </div>
+
+        <div class="form-group">
+          <label id="select-label" for="dropdown">Choose your study level: </label>
+          <select id="dropdown" name="dropdown">
+            <option value="">Please choose an option</option>
+            <option value="high-school">High School</option>
+            <option value="professional">Professional</option>
+            <option value="bachelor">Bachelor</option>
+            <option value="graduate">Graduate</option>
+          </select>
+        </div>
+
+        <fieldset id="radio-fieldset">
+          <legend>Choose your salary expectation</legend>
+          <input id="minus-100" name="salary" value="minus-100" checked type="radio"/>
+          <label for="minus-100">>100k US</label>
+          
+          <input id="100-150" value="100-150" name="salary" type="radio"/>
+          <label for="100-150">100k - 150k</label>
+
+          <input id="150-200" value="150-200" name="salary" type="radio" />
+          <label for="150-200">150k - 200k</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose your best schedule</legend>
+          <input id="morning" value="morning" name="schedule" type="checkbox" checked/>
+          <label for="morning">Morning</label>
+
+          <input id="afternoon" value="afternoon" name="schedule" type="checkbox" />
+          <label for="afternoon">Afternoon</label>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="textarea">What is your motivation:</label>
+          <textarea id="textarea" name="motivation" rows="5" cols="33">My motivation is...</textarea>
+        </div>
+        
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
